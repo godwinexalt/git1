@@ -13,6 +13,8 @@ public partial class _Default : System.Web.UI.Page
 
         if (!File.Exists(Server.MapPath("~/text.txt")))
             File.Create(Server.MapPath("~/text.txt"));
+        else
+            Response.Write("file exists");
 
     }
 }
